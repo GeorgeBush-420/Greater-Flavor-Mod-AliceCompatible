@@ -24,7 +24,6 @@ sea_starts = {
 	3629 3630 3631 3632 3633 3634 3635 3636 3637 3638 3639 3640 3642 3643 3909 3910 3911 3912 3944 3954
 }
 
-#definitions = "definition.csv" # for use with Scenario Editor
 definitions = "../mod/GFM/map/definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"

@@ -853,7 +853,7 @@ fabric_factory = {
     template = factory_template
     input_goods = {
         cotton = 18        # 36
-        dye = 2                # 24 total input+maint = 69.875
+        wool = 2                # 24 total input+maint = 69.875
     }
     output_goods = fabric
     value = 44            #79.2 - profit = 9.3
@@ -862,15 +862,6 @@ fabric_factory = {
         value = 0.125
     }
     bonus = {
-        trigger = {
-            OR = {
-                has_building = dye_factory
-                trade_goods_in_state = dye
-                }
-            }
-        value = 0.125
-    }
-	bonus = {
         trigger = { trade_goods_in_state = wool }
         value = 0.125
     }
@@ -1397,9 +1388,14 @@ artisan_luxury_clothes = {
     input_goods = {
         regular_clothes = 0.9    #5.22
         silk = 3.9        #39    total input = 44.22
+        dye = 0.9
     }
     output_goods = luxury_clothes
     value = 1            #65 - profit = 20.78
+	bonus = {
+		trigger = { trade_goods_in_state = dye }
+		value = 0.2
+	}
 
     owner = {
         poptype = artisans
@@ -1415,9 +1411,14 @@ artisan_luxury_furniture = {
     input_goods = {
         furniture = 2         #9.8
         tropical_wood = 7.5 #40.5    total input = 50.3
+        dye = 1
     }
     output_goods = luxury_furniture
     value = 1.2            #70.8 - profit = 20.5
+    	bonus = {
+		trigger = { trade_goods_in_state = dye }
+		value = 0.2
+	}
 
     owner = {
         poptype = artisans
